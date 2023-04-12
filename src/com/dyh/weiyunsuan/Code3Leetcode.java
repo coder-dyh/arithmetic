@@ -1,6 +1,6 @@
 package com.dyh.weiyunsuan;
 
-import java.util.*;
+import java.util.Arrays;
 
 /**
  * @program: mydemo
@@ -16,15 +16,16 @@ public class Code3Leetcode {
 
     public static void main(String[] args) {
 //        System.out.println(code3Leetcode.singleNumber2(new int[]{2,2,2,3}));
-        System.out.println(code3Leetcode.hammingWeight(-7));
-        Code1PrintBinary.printBinary(-7);
+//        System.out.println(code3Leetcode.hammingWeight(-7));
+//        Code1PrintBinary.printBinary(-7);
 
 //        code3Leetcode.printNextNum();
 
 //        System.out.println(code3Leetcode.reverseBits(8));
 
-        System.out.println(code3Leetcode.isPowerOfTwo(4));
+//        System.out.println(code3Leetcode.isPowerOfTwo(4));
 
+        System.out.println(code3Leetcode.replaceSpace("We are happy."));
     }
 
 
@@ -201,5 +202,28 @@ public class Code3Leetcode {
         return eor;
     }
 
+
+    public int findRepeatNumber(int[] nums) {
+        Arrays.sort(nums);
+        for (int i = 0; i < nums.length - 1; i++) {
+            if (nums[i] == nums[i + 1]) {
+                return nums[i];
+            }
+        }
+        return 0;
+    }
+
+    public String replaceSpace(String s) {
+        char[] c = s.toCharArray();
+        String res = "";
+        for (char c1 : c) {
+            if (c1 == ' ') {
+                res += "%20";
+                continue;
+            }
+            res += c1;
+        }
+        return res;
+    }
 
 }

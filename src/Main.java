@@ -1,5 +1,3 @@
-import java.util.Objects;
-
 /**
  * @program: mydemo
  * @description:
@@ -9,13 +7,10 @@ import java.util.Objects;
  */
 public class Main {
 
-    public static void main(String[] args) {
+
+    public static void main(String[] args) throws Exception {
+
     }
 
 
-    public static void binaryAdd(String a, String b) {
-        for (char c : a.toCharArray()) {
-
-        }
-    }
 }
