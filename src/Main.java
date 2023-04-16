@@ -1,3 +1,5 @@
+import com.dyh.fuxi.DLinkedList;
+
 /**
  * @program: mydemo
  * @description:
@@ -9,7 +11,10 @@ public class Main {
 
 
     public static void main(String[] args) throws Exception {
-
+        DLinkedList<String> dLinkedList = new DLinkedList();
+        dLinkedList.add("dyh");
+        dLinkedList.add("ocn");
+        dLinkedList.add("wfl");
     }
 
 
