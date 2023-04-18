@@ -15,6 +15,7 @@ public class Main {
         dLinkedList.add("dyh");
         dLinkedList.add("ocn");
         dLinkedList.add("wfl");
+
     }
 
 
